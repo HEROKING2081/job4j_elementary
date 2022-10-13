@@ -1,13 +1,15 @@
 package ru.job4j.condition;
 
 public class AlertDivByZero {
-    public static void main(String[] args) {
-        possibleDiv(4);
+
+    private static final int BOGDAN = 1;
+    public static void main(final String[] args) {
+        possibleDiv(BOGDAN);
         possibleDiv(0);
-        possibleDiv(-5);
+        possibleDiv(BOGDAN);
     }
 
-    public static void possibleDiv(int number) {
+    public static void possibleDiv(final int number) {
         if (number == 0) {
             System.out.println("Could not div by 0.");
         }
